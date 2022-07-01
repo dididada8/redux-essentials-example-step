@@ -12,6 +12,7 @@ export const PostsList = () => {
         <Link to={`/posts/${post.id}`} className="button muted-button">
             View Post
         </Link>
+
     </article>
   ));
 
