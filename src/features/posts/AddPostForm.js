@@ -15,13 +15,11 @@ export const AddPostForm = () => {
     const onSavePostClicked = () => {
         if (title && content) {
             dispatch(
-                postAdded({
-                    id: nanoid(),
+                postAdded(
                     title,
                     content
-                })
+                )
             )
-
             setTitle('')
             setContent('')
         }
